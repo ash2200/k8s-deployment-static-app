@@ -11,10 +11,12 @@ spec:
         app: days-app
     spec:
       containers: 
-        name: days-app-container
+      - name: days-app-container
         image: vagdevik/my-first-app-image:1.1
         ports:
-          containerPort: 80
+        - containerPort: 80
   selector:
     matchLabels:
-      app: days-app        
+      app: days-app
+
+
